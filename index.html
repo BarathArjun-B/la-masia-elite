@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Masia Elite Football Academy</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="La Masia home">
+        <span class="brand-mark">LM</span>
+        <span>La Masia Elite</span>
+      </a>
+      <nav class="nav-links" aria-label="Site sections">
+        <a href="#training">Training</a>
+        <a href="#active-workout">Workout</a>
+        <a href="#positions">Positions</a>
+        <a href="#method">Method</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Elite football academy platform</p>
+          <h1 id="hero-title">Train with the mentality of the world's coldest finishers.</h1>
+          <p class="hero-copy">
+            Build speed, control, passing range, defensive timing, and match-winning composure inside a cinematic academy experience.
+          </p>
+          <a class="cta" href="#training">
+            <span>Start Training</span>
+            <span aria-hidden="true">-></span>
+          </a>
+        </div>
+        <div class="hero-stats" aria-label="Academy highlights">
+          <div>
+            <strong>4</strong>
+            <span>Elite skill labs</span>
+          </div>
+          <div>
+            <strong>360</strong>
+            <span>Match IQ reps</span>
+          </div>
+          <div>
+            <strong>11v11</strong>
+            <span>Game-real pressure</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section training" id="training" aria-labelledby="training-title">
+        <div class="section-kicker">Technical labs</div>
+        <div class="section-heading">
+          <h2 id="training-title">Every touch has a purpose.</h2>
+          <p>Four focused modules, each built around visual rhythm, pressure, timing, and repetition.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal" style="--image: url('ballc.jpg'); --focus: center;">
+            <div class="card-sheen" aria-hidden="true"></div>
+            <div class="feature-content">
+              <span class="tag">01</span>
+              <h3>Ball Control</h3>
+              <p>First touch, soft receiving angles, aerial control, and calm touches under closing pressure.</p>
+            </div>
+          </article>
+
+          <article class="feature-card reveal" style="--image: url('pass.jpg'); --focus: 42% center;">
+            <div class="card-sheen" aria-hidden="true"></div>
+            <div class="feature-content">
+              <span class="tag">02</span>
+              <h3>Passing</h3>
+              <p>Scan early, disguise intent, break lines, and keep tempo when the match starts moving fast.</p>
+            </div>
+          </article>
+
+          <article class="feature-card reveal" style="--image: url('drib.jpg'); --focus: center;">
+            <div class="card-sheen" aria-hidden="true"></div>
+            <div class="feature-content">
+              <span class="tag">03</span>
+              <h3>Dribbling</h3>
+              <p>Manipulate defenders, change pace, protect the ball, and attack the gap at the right moment.</p>
+            </div>
+          </article>
+
+          <article class="feature-card reveal" style="--image: url('attack.jpg'); --focus: center;">
+            <div class="card-sheen" aria-hidden="true"></div>
+            <div class="feature-content">
+              <span class="tag">04</span>
+              <h3>Shooting</h3>
+              <p>Finishing mechanics, composure, angle selection, and ruthless decisions in the final third.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="active-workout" id="active-workout" aria-labelledby="workout-title">
+        <div class="workout-bg active" data-workout-bg="attacker" style="background-image: url('attac.jpg')"></div>
+        <div class="workout-bg" data-workout-bg="midfielder" style="background-image: url('mid.jpg')"></div>
+        <div class="workout-bg" data-workout-bg="defender" style="background-image: url('def.jpg')"></div>
+        <div class="workout-bg" data-workout-bg="gk" style="background-image: url('gk.jpg')"></div>
+        <div class="workout-backdrop" aria-hidden="true"></div>
+
+        <div class="workout-shell reveal">
+          <div class="workout-header">
+            <div>
+              <div class="section-kicker">Active workout</div>
+              <h2 id="workout-title">Step into a match-speed training room.</h2>
+            </div>
+            <p>
+              Pick a position, move through the phase plan, and keep the session feeling sharp, visual, and game-real.
+            </p>
+          </div>
+
+          <div class="workout-position-tabs" role="tablist" aria-label="Workout position backgrounds">
+            <button class="workout-position-button active" type="button" role="tab" aria-selected="true" data-workout-position="attacker">Attacker</button>
+            <button class="workout-position-button" type="button" role="tab" aria-selected="false" data-workout-position="midfielder">Midfielder</button>
+            <button class="workout-position-button" type="button" role="tab" aria-selected="false" data-workout-position="defender">Defender</button>
+            <button class="workout-position-button" type="button" role="tab" aria-selected="false" data-workout-position="gk">GK</button>
+          </div>
+
+          <div class="workout-grid">
+            <article class="video-card" aria-label="Training video">
+              <div class="video-frame">
+                <iframe
+                  id="workout-video"
+                  src="https://www.youtube.com/embed/Hqz5n4tq7ys"
+                  title="Football training video"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </article>
+
+            <aside class="phase-panel" aria-label="Workout phase details">
+              <div class="phase-tabs" role="tablist" aria-label="Workout phases">
+                <button class="phase-tab active" type="button" role="tab" aria-selected="true" data-phase="warmup">Warmup</button>
+                <button class="phase-tab" type="button" role="tab" aria-selected="false" data-phase="technical">Technical</button>
+                <button class="phase-tab" type="button" role="tab" aria-selected="false" data-phase="shooting">Shooting</button>
+                <button class="phase-tab" type="button" role="tab" aria-selected="false" data-phase="fitness">Fitness</button>
+                <button class="phase-tab" type="button" role="tab" aria-selected="false" data-phase="recovery">Recovery</button>
+              </div>
+
+              <div class="phase-content" id="phase-content">
+                <span id="phase-meta">12 min · touch prep</span>
+                <h3 id="phase-title">Warmup: activate with the ball</h3>
+                <p id="phase-description">
+                  Open the hips, wake up the first touch, and build rhythm before the session gets intense.
+                </p>
+                <a class="workout-cta" href="#positions">
+                  <span>Continue Session</span>
+                  <span aria-hidden="true">-></span>
+                </a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="positions" id="positions" aria-labelledby="positions-title">
+        <div class="position-bg active" data-panel-bg="attacker" style="background-image: url('attac.jpg')"></div>
+        <div class="position-bg" data-panel-bg="midfielder" style="background-image: url('mid.jpg')"></div>
+        <div class="position-bg" data-panel-bg="defender" style="background-image: url('def.jpg')"></div>
+        <div class="position-bg" data-panel-bg="gk" style="background-image: url('gk.jpg')"></div>
+        <div class="position-overlay" aria-hidden="true"></div>
+
+        <div class="position-shell reveal">
+          <div class="section-kicker">Position intelligence</div>
+          <div class="position-copy">
+            <h2 id="positions-title">Choose your role. Feel the game change around you.</h2>
+            <p id="position-description">
+              Train explosive movement, winger combinations, striker instincts, and coordinated final-third attacks.
+            </p>
+          </div>
+
+          <div class="tab-list" role="tablist" aria-label="Position backgrounds">
+            <button class="tab-button active" type="button" role="tab" aria-selected="true" data-position="attacker">Attacker</button>
+            <button class="tab-button" type="button" role="tab" aria-selected="false" data-position="midfielder">Midfielder</button>
+            <button class="tab-button" type="button" role="tab" aria-selected="false" data-position="defender">Defender</button>
+            <button class="tab-button" type="button" role="tab" aria-selected="false" data-position="gk">GK</button>
+          </div>
+
+          <div class="position-metrics" aria-label="Current position training metrics">
+            <div>
+              <span>Focus</span>
+              <strong id="metric-focus">Final third</strong>
+            </div>
+            <div>
+              <span>Tempo</span>
+              <strong id="metric-tempo">Explosive</strong>
+            </div>
+            <div>
+              <span>Pressure</span>
+              <strong id="metric-pressure">High block</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section method" id="method" aria-labelledby="method-title">
+        <div class="section-kicker">Academy rhythm</div>
+        <div class="method-layout">
+          <div class="section-heading">
+            <h2 id="method-title">Built for players who want the game to slow down.</h2>
+          </div>
+          <div class="method-list">
+            <div class="method-item reveal">
+              <span>01</span>
+              <p>Technical repetition wrapped in realistic pressure cues and match scenarios.</p>
+            </div>
+            <div class="method-item reveal">
+              <span>02</span>
+              <p>Role-specific sessions that teach what to see before the ball arrives.</p>
+            </div>
+            <div class="method-item reveal">
+              <span>03</span>
+              <p>Short, intense blocks that keep the player sharp instead of overloaded.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
