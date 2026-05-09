@@ -76,6 +76,33 @@ Used dynamically across:
 
 # 🛠 Tech Stack
 
+## Full-Stack App
+
+This repository is now organized as a MERN monorepo:
+
+```bash
+la-masia-elite/
+ ├── client/   # React + Vite frontend
+ ├── server/   # Express + MongoDB auth API
+ └── package.json
+```
+
+Run the frontend:
+
+```bash
+npm --prefix client install
+npm --prefix client run dev
+```
+
+Run the backend:
+
+```bash
+npm --prefix server install
+npm --prefix server run dev
+```
+
+Configure `server/.env` for MongoDB Atlas, JWT secrets, SMTP, and deployed frontend/backend URLs.
+
 ## Frontend
 
 * React.js

@@ -1,0 +1,20 @@
+{
+  "name": "la-masia-elite",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack MERN football training SaaS for La Masia Elite.",
+  "scripts": {
+    "client": "npm --prefix client run dev",
+    "server": "npm --prefix server run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server start"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
