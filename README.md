@@ -2,184 +2,279 @@
 
 > Train Like a Champion. Build Like La Masia.
 
-A cinematic football training platform inspired by elite football academies and modern sports-tech experiences.
+LA MASIA ELITE is a full-stack football-tech SaaS platform inspired by elite football academies and modern cinematic sports experiences.
 
-Built using React + Vite with immersive dark UI, animated interactions, position-based training systems, and premium football visuals.
+Built using the MERN stack with secure authentication, immersive dark UI, dynamic football training systems, and premium sports-tech aesthetics.
 
 ---
 
 # 🌐 Live Demo
 
-🔗 https://la-masia-elite.vercel.app
+Frontend:
+https://la-masia-elite.vercel.app
 
 ---
 
 # 🚀 Features
 
-## ⚽ Position-Based Training
+## ⚽ Football Training Modules
 
-Dedicated training modules for:
+Dedicated role-based football training systems for:
 
 * 🥷 Attacker
 * 🎯 Midfielder
 * 🛡 Defender
 * 🧤 Goalkeeper
 
-Each role includes:
+Each module includes:
 
-* Warmup
-* Technical drills
-* Shooting
-* Fitness
-* Recovery sessions
-
----
-
-## 🎥 Dynamic Workout Experience
-
+* Warmup drills
+* Technical training
+* Shooting practice
+* Fitness sessions
+* Recovery guidance
 * Embedded football training videos
-* Interactive workout phases
-* Smooth tab transitions
-* Position-based cinematic backgrounds
+* Dynamic football backgrounds
 
 ---
 
-## 🎨 Premium UI/UX
+# 🔐 Full Authentication System
 
-* Dark cinematic football theme
+Production-style authentication built with:
+
+* JWT Access Tokens
+* Refresh Token Flow
+* Secure HTTP-only Cookies
+* Protected Routes
+* Persistent Login Sessions
+* Logout System
+* Forgot Password
+* Reset Password
+* Email Verification
+
+---
+
+# 🎨 Premium UI/UX
+
+Designed with a cinematic football aesthetic inspired by:
+
+* Netflix
+* Nike Football
+* Modern SaaS dashboards
+* Sports-tech platforms
+
+### UI Features
+
+* Dark immersive theme
 * Glassmorphism cards
-* Smooth hover animations
-* Responsive modern layout
-* Netflix / Nike inspired design system
+* Smooth transitions
+* Animated sections
+* Responsive layouts
+* Dynamic football visuals
 * Framer Motion animations
 
 ---
 
-## 🌌 Immersive Football Visuals
-
-Features iconic football-inspired visuals:
-
-* Cristiano Ronaldo
-* MSN Trio
-* Maldini & Nesta
-* Neuer
-* Barcelona Midfield Trio
-
-Used dynamically across:
-
-* Hero sections
-* Workout modules
-* Feature cards
-* Position tabs
-
----
-
-# 🛠 Tech Stack
-
-## Full-Stack App
-
-This repository is now organized as a MERN monorepo:
-
-```bash
-la-masia-elite/
- ├── client/   # React + Vite frontend
- ├── server/   # Express + MongoDB auth API
- └── package.json
-```
-
-Run the frontend:
-
-```bash
-npm --prefix client install
-npm --prefix client run dev
-```
-
-Run the backend:
-
-```bash
-npm --prefix server install
-npm --prefix server run dev
-```
-
-Configure `server/.env` for MongoDB Atlas, JWT secrets, SMTP, and deployed frontend/backend URLs.
+# 🧠 Tech Stack
 
 ## Frontend
 
 * React.js
 * Vite
 * React Router DOM
-* CSS3
+* Axios
 * Framer Motion
+* CSS3
+
+## Backend
+
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+
+## Authentication & Security
+
+* JWT
+* bcrypt
+* cookie-parser
+* helmet
+* express-rate-limit
+
+## Email Services
+
+* Nodemailer
 
 ## Deployment
 
 * Vercel
+* Render
+* MongoDB Atlas
 
 ---
 
 # 📂 Project Structure
 
 ```bash
-src/
- ├── assets/
- ├── components/
- ├── pages/
- ├── App.jsx
- ├── main.jsx
+la-masia-elite/
+ ├── client/
+ │   ├── src/
+ │   ├── public/
+ │   ├── package.json
+ │   └── vite.config.js
+ │
+ ├── server/
+ │   ├── config/
+ │   ├── controllers/
+ │   ├── middleware/
+ │   ├── models/
+ │   ├── routes/
+ │   ├── utils/
+ │   ├── app.js
+ │   ├── server.js
+ │   └── package.json
+ │
+ ├── README.md
+ └── package.json
 ```
 
 ---
 
 # ⚙️ Installation
 
-Clone repository:
+## Clone Repository
 
 ```bash
 git clone https://github.com/BarathArjun-B/la-masia-elite.git
 ```
 
-Move into project:
+---
+
+## Move Into Project
 
 ```bash
 cd la-masia-elite
 ```
 
-Install dependencies:
+---
+
+# 📦 Install Dependencies
+
+## Frontend
 
 ```bash
+cd client
 npm install
 ```
 
-Run locally:
+## Backend
 
 ```bash
+cd ../server
+npm install
+```
+
+---
+
+# 🔑 Environment Variables
+
+Create:
+
+```bash
+server/.env
+```
+
+Example:
+
+```env
+NODE_ENV=development
+
+PORT=5001
+
+MONGO_URI=mongodb://127.0.0.1:27017/la_masia_elite
+
+CLIENT_URL=http://localhost:5173
+API_URL=http://localhost:5001
+
+JWT_ACCESS_SECRET=your_access_secret
+JWT_REFRESH_SECRET=your_refresh_secret
+
+JWT_ACCESS_EXPIRES_IN=15m
+JWT_REFRESH_EXPIRES_IN=7d
+
+JWT_REFRESH_COOKIE_EXPIRES_DAYS=7
+
+EMAIL_FROM="La Masia Elite <no-reply@lamasiaelite.com>"
+
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_SECURE=false
+
+SMTP_USER=your_email@gmail.com
+SMTP_PASS=your_app_password
+```
+
+---
+
+# ▶️ Run Application
+
+## Start Backend
+
+```bash
+cd server
+npm run dev
+```
+
+## Start Frontend
+
+```bash
+cd client
 npm run dev
 ```
 
 ---
 
-# 🎯 Vision
+# 🌍 Local Development URLs
 
-LA MASIA ELITE combines:
+Frontend:
 
-* football culture
-* cinematic storytelling
-* immersive UI/UX
-* modern frontend engineering
+```bash
+http://localhost:5173
+```
 
-into one premium football-tech experience.
+Backend:
+
+```bash
+http://localhost:5001
+```
 
 ---
 
-# 🔥 Future Enhancements
+# 🔐 API Routes
 
-* Authentication System
+| Method | Route                         | Description                |
+| ------ | ----------------------------- | -------------------------- |
+| POST   | /api/auth/register            | Register user              |
+| POST   | /api/auth/login               | Login user                 |
+| POST   | /api/auth/logout              | Logout user                |
+| GET    | /api/auth/me                  | Current authenticated user |
+| POST   | /api/auth/refresh-token       | Refresh JWT                |
+| POST   | /api/auth/forgot-password     | Forgot password            |
+| POST   | /api/auth/reset-password      | Reset password             |
+| GET    | /api/auth/verify-email/:token | Verify email               |
+
+---
+
+# 🚀 Future Enhancements
+
 * AI Football Coach
 * Player Analytics Dashboard
-* Progress Tracking
-* Backend Integration
-* Personalized Training Recommendations
-* SaaS-Level User Experience
+* Workout Progress Tracking
+* Realtime Training Sessions
+* Subscription System
+* AI Training Recommendations
+* Mobile App Version
+* Team Collaboration Features
 
 ---
 
