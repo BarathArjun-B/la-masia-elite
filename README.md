@@ -1,4 +1,4 @@
-# ⚽ LA MASIA ELITE
+⚽ LA MASIA ELITE
 
 > Train Like a Champion. Build Like La Masia.
 
