@@ -1,6 +1,7 @@
 ⚽ LA MASIA ELITE
 
 > Train Like a Champion. Build Like La Masia.
+> Trained product - Greatest of all time - Messi
 
 LA MASIA ELITE is a full-stack football-tech SaaS platform inspired by elite football academies and modern cinematic sports experiences.
 
